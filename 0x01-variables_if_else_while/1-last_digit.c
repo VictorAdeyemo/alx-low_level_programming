@@ -15,7 +15,7 @@ int n;
 int ldn;
 char msg1[] = "Last digit of";
 char msg2[] = "and is greater than 5";
-char msg3[] = "less than 6 and not 0";
+char msg3[] = "and is less than 6 and not 0";
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
@@ -26,7 +26,7 @@ printf("%s %i %s %i %s\n", msg1, n, "is", ldn, msg2);
 }
 else if (ldn == 0)
 {
-printf("%s %i %s %i %s", msg1, n, "is", ldn, "and is 0\n");
+printf("%s %i %s %i %s\n", msg1, n, "is", ldn, "and is 0");
 }
 else
 {
