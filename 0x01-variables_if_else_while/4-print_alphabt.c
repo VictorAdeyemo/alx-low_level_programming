@@ -7,7 +7,6 @@
 int main(void)
 {
 char i = 'a';
-printf("\n\nLower case characters:\n");
 while (i <= 'z')
 {
 if (i != 'e' && i != 'q')
