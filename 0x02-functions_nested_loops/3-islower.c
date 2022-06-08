@@ -1,30 +1,18 @@
-#include "main.h"
-
-
-
+#inlcude "main.h"
 /**
- *  * main - check the code
- *
- * Return: Always 0.
- */
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
 
 int _islower(int c)
-
 {
-
 if (c > 'a' && c < 'z')
-
 {
-
 return (1);
-
 }
-
 else
-
 {
-
 return (0);
 }
-
 }

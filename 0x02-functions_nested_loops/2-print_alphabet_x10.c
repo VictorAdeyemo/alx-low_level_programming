@@ -1,41 +1,22 @@
-nclude "main.h"
-
+#include "main.h"
 /**
-
- * main - check the code
-
- *
-
- * Return: Always 0.
-
- */
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
 
 void print_alphabet_x10(void)
-
 {
-
 int alp;
-
 int i;
-
-counter = 0;
-
+int counter = 0;
 while (counter < 10)
-
 {
-
-for (alp = "a" ; alp <= 'a' ; alp++){
-
+for (alp = "a" ; alp <= 'a' ; alp++)
+{
 _putchar(alp);
-
 }
-
-counter++j
-
+counter++;
 putchar('\n');
-
 }
-
-
-
 }
