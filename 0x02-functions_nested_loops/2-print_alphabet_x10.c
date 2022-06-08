@@ -7,23 +7,21 @@
  *
  * Return: Always 0 (Success).
  */
-
 void print_alphabet_x10(void)
 {
-	int alpha; 
-	int icount;
+	int alphabet, count;
 
 
-	icount = 0;
+	count = 0;
 
-	while (icount < 10)
+	while (count < 10)
 	{
-		for (alpha = 'a' ; alpha <= 'z'; alpha++)
+		for (alphabet = 'a' ; alphabet <= 'z'; alphabet++)
 		{
-			_putchar(alpha);
+			_putchar(alphabet);
 		}
 
-		icount++;
+		count++;
 
 		_putchar('\n');
 	}
