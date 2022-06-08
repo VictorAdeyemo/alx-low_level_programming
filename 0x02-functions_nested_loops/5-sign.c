@@ -2,10 +2,13 @@
 
 /**
  * print_sign - prints the sign of a number.
+ *
  * @n: The value to be evaluated
+ * 
  * Description: prints +, 0 or - depending on the value of n
  *
- * Return: Always 0 (Success).
+ *
+ * Return: 1 or 0.
  */
 
 int print_sign(int n)
