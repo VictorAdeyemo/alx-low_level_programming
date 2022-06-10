@@ -1,14 +1,14 @@
 /**
- * _isupper -  a function that checks for lowercase character.
+ * _isdigit -  a function that checks for a digit.
  *
  * @c: contains value to be checked
  *
- * Description: checks for uppercase character.
+ * Description: checks for a digit.
  *
- * Return: Always 0 (Success).
+ * Return: 1 or 0 depending on the value of c.
  */
 
-int _isupper(int c)
+int _isdigit(int c)
 {
 
 	if (c >= 65 && c <= 90)
