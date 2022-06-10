@@ -13,10 +13,11 @@ void print_numbers(void)
 int n = 0;
 
 	do {
-		printf("%i", n);
+		_putchar(n);
 		n = n + 1;
 }
 	while (n < 10);
 
 	return (0);
+	_putchar('\n')
 }
