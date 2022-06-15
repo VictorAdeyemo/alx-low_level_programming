@@ -2,24 +2,30 @@
 
 /**
  *
- * print_rev - prints a given string in reverse order
+ * rev_string - prints a given string in reverse order
  *
  * @s: The given string
- *
  *
  */
 
 void rev_string(char *s)
 {
-	int j = 0;
-	int i;
+	int i, size, half;
+	char first, last;
 
-	while (s[j] != '\0')
-	{
-		j++;
-	}
-	for (i = j-1 ; i >= 0 ; i++)
-	{
-		return (s[i]);
-	}
+	i = 0;
+while (s[i] != 0)
+{
+	i++;
+}
+	size = i - 1;
+	half = size / 2;
+while (half >= 0)
+{
+	first = s[size - half];
+	last = s[half];
+	s[half] = first;
+	s[size - half] = last;
+	half--;
+}
 }
