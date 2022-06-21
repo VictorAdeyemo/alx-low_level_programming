@@ -5,7 +5,7 @@
  * @s: The string given
  * @c: The character to be located
  *
- * Return: Always o.
+ * Return: a pointer to the first occurence of character c otherwise return NUL.
  *
  */
 
@@ -13,19 +13,14 @@ char *_strchr(char *s, char c)
 {
 	int i;
 
-	for (i = 0; s[i] != '\0' ; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
 		{
 			return (s + i);
 		}
-		else
-		{
-			return (NULL);
-		}
-
 	}
-	if (s[i} == c)
+	if (s[i] == c)
 		return (s + i);
 	return (0);
 }
