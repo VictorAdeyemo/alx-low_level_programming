@@ -9,10 +9,14 @@
  */
 
 int _pow_recursion(int x, int y)
-{
+{	
+	--y;
+	if (y > 0)
+	{
+		return (n * _pow_recursion(x, y) );
+	}
 	if (y < 0)
 	{
 		return (-1);
 	}
-	return (x ^ y);
 }
