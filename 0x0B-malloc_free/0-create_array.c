@@ -26,13 +26,19 @@ char *create_array(unsigned int size, char c)
 			ptr[i] = c;
 		}
 	}
-	if (ptr == NULL)
+
+	while (1)
 	{
-		return (NULL);
-	}
-	else
-	{
+
+		ptr = malloc(INT_MAX);
+		if (ptr == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
 		return (ptr);
 		free(ptr);
+		}
 	}
 }
