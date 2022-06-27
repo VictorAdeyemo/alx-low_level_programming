@@ -28,18 +28,14 @@ char *create_array(unsigned int size, char c)
 		}
 	}
 
-	while (1)
-	{
 
-		ptr = malloc(INT_MAX);
-		if (ptr == NULL)
-		{
-			return (NULL);
-		}
-		else
-		{
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
 		return (ptr);
 		free(ptr);
-		}
 	}
 }
