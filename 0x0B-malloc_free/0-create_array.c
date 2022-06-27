@@ -33,6 +33,6 @@ char *create_array(unsigned int size, char c)
 	else
 	{
 		return (ptr);
+		free(ptr);
 	}
-	free(ptr);
 }
