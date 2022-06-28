@@ -25,11 +25,16 @@ char *_strdup(char *str)
 		i++;
 	}
 	ptr = (char *)malloc((i + 1) * sizeof(char));
-	for (j = 0; j <= i ; j++)
+	if (ptr == NULL)
 	{
-		ptr[j] = str[j];
+		return (NULL);
 	}
-	return (ptr);
-	free(ptr);
+	else
+	{
+		for (j = 0; j <= i ; j++)
+		{
+			ptr[j] = str[j];
+		}
+		return (ptr);
+	}
 }
-
