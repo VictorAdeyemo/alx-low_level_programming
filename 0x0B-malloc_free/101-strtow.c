@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <limits.h>
 
 int word_len(char *str);
 int count_words(char *str);
