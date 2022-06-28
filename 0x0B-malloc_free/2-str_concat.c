@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdlib.h>
+#include <limits.h>
 /**
 * str_concat -> string concatinating function
 * @s1: string 1

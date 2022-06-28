@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <limits.h>
 
 /**
 * free_grid -> removing memory allocation
