@@ -13,10 +13,12 @@ void print_name(char *name, void (*f)(char *))
 
 	if (f == NULL)
 	{
-		while (name[i])
-		{
-			_putchar(name[i]);
-			i++;
-		}
+		return;
+	}
+	
+	while (name[i])
+	{
+		_putchar(name[i]);
+		i++;
 	}
 }
